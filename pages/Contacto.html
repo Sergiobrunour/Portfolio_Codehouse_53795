@@ -5,78 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4a212ad058.js" crossorigin="anonymous"></script>
     <title>Sergio Bruno - Contacto</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../SergioBruno.ico" type="image/x-icon">
 </head>
-</nav>
-<body>
-    <header class="header">
-        <nav>
-            <ul>
-                <li class="listas"><img src="../assets/img/Logo.png" alt="Logotipo que dice Sergio Bruno"></li>
-                <li class="listas"><a class="enlacePaginas" href="../index.html">INICIO</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./Sobremi.html">SOBRE MI</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./DesignUI.html">DESIGN/UI</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./ResearchUX.html">RESEARCH/UX</a></li>
-                <li class="listas"><a class="enlacePaginas" href="#">CONTACTO</a></li>
-            </ul>        
-    </header>
-    <main class="main">
-        <figure>
-            <img class="fotoPortada" src="../assets/img/InicioSergio.png" alt="Fondo de Sergio Bruno (autor de la página)">
-        </figure>
-        <div class="colorPrimario info">
-            <h1>Contactanos</h1>
-            <section>
-                <h3>Mail</h3>
-                <p>sergio.brunour@gmail.com</p>
-            </section>
-            <section>
-                <h3>Redes Sociales</h3>
-                <div>
-                    <i class="fa-brands fa-whatsapp"></i>
-                    <a target="_blank" href="https://www.whatsapp.com/?lang=es_LA">Whatsapp</a>
+<body class="cPrimario tBlanco">
+    <header class="cSecundario">
+        <div class="container">
+            <nav class="navbar sticky-top">
+                <div class="container-fluid">
+                    <picture class="px-5">
+                        <img class="navbar-brand" src="../assets/img/Logo.png" alt="Logotipo que dice Sergio Bruno">
+                    </picture>
+                    <ul class="nav py-3">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">SOBRE MI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./designUI.html">DESIGN/UI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./researchUX.html">RESEARCH/UX</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">CONTACTO</a></li>
+                    </ul>        
                 </div>
-                <div>
-                    <i class="fa-brands fa-facebook"></i>
-                <a target="_blank" href="https://www.facebook.com/">Facebook</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-telegram"></i>
-                    <a target="_blank" href="https://telegram.com.es/">Telegram</a>
-                </div>
-                <div>
-                    <i class="fa-brands fa-instagram"></i>
-                    <a target="_blank" href="https://www.instagram.com/">Instagram</a>
-                </div>
-                
-            </section>
+            </nav>
         </div>
-        <section>
-            <h3>Encuentra nuestras Oficinas</h3>
-            <iframe title="Oficinas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9658.383006927506!2d-58.49030632605603!3d-34.559689947205584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6f2dd0efbf3%3A0xeb819f989057216!2sParque%20Alberdi!5e0!3m2!1ses-419!2sar!4v1707166186667!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </section>
+    </header>
+    <main class="cSecundario">
+        <div>
+            <img class="fotoPortada" src="../assets/img/contactoFondo.jpg" alt="Fondo de Sergio Bruno (autor de la página)">
+        </div>
+        <section class="container mt-4">
+            <h1 class="d-flex justify-content-center">Contacto</h1>
+            <div class="row">
+                <div class="row justify-content-between align-items-center mx-auto">
+                    <div class="col-12 col-md-6 text-center">
+                        <section>
+                            <h2 >Mantente en Contacto</h2>
+                            <p>Si necesitas hablarme sobre un proyecto y/o necesitas consejos sobre desiño o investigaciones dejame un mensaje a <span class="bb">sergio.brunour@gmail.com</span>
+                                Actualmente para cualquier proyecto ya sea Diseño Grafico, Diseño UI, o Research UX</p>
+                        </section>
+                    </div>
+                    <form class="col-12 col-md-6 p-5">
+                        <div class="mb-3 needs-validation" novalidate>
+                            <label for="validationCustom01" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="validationCustom01" required>
+                        </div>
+                        <div class="mb-3 needs-validation">
+                            <label for="validationCustom02" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="validationCustom02" required>
+                        </div>
+                            <div class="mb-3 needs-validation">
+                                <label for="validationCustom02" class="form-label">¿En qué puedo ayudarte?</label>
+                                <textarea class="form-control" id="validationCustom03" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        </div>
+                        <div class="col">
+                            <button class="btn cTerciario" type="submit">Submit</button>
+                        </div>
+                    </form>
+                    <section class="col-12 col-md-6 text-center p-5">
+                        <h2>Redes Sociales</h2>
+                            <div class="my-4">
+                                <i class="fa-brands fa-whatsapp"></i>
+                                <a target="_blank" href="https://www.whatsapp.com/?lang=es_LA">Whatsapp</a>
+                            </div>
+                            <div class="my-4">
+                                <i class="fa-brands fa-facebook"></i>
+                            <a target="_blank" href="https://www.facebook.com/">Facebook</a>
+                            </div>
+                            <div class="my-4">
+                                <i class="fa-brands fa-telegram"></i>
+                                <a target="_blank" href="https://telegram.com.es/">Telegram</a>
+                            </div>
+                            <div class="my-4">
+                                <i class="fa-brands fa-instagram"></i>
+                                <a target="_blank" href="https://www.instagram.com/">Instagram</a>
+                            </div>
+                    </section>
+                    <section class="col-12 col-md-6 p-5">
+                        <h2>Encuentra nuestras Oficinas</h2>
+                        <iframe title="Oficinas" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9658.383006927506!2d-58.49030632605603!3d-34.559689947205584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6f2dd0efbf3%3A0xeb819f989057216!2sParque%20Alberdi!5e0!3m2!1ses-419!2sar!4v1707166186667!5m2!1ses-419!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </section>
+            </div>  
+        </div>
+    </section>  
     </main>
-    <footer class="colorSecundario">
-        <section>
-            <h2>Mantente en Contacto</h2>
-            <h3>Sergio Bruno</h3>
-            <p>© 2024 Sergio Bruno. All rights reserved.</p>
-            <section>
-                <h3>Descubre más</h3>
-                <ul>
-                    <li><a href="./Sobremi.html">Sobre mi</a></li>
-                    <li><a href="./DesignUI.html">Design/UI</a></li>
-                    <li><a href="./ResearchUX.html">Research/UX</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
-                <ul>
-                    <li><a href="">Términos y Condiciones</a></li>
-                    <li><a href="">Políticas de Privacidad</a></li>
-                    <li><a href="">Políticas de las Cookies</a></li>
-                </ul>
+    <footer class="container py-5">
+        <section class="row">
+            <section class="col-sm-4">
+                <h4>Sergio Bruno</h4>
+                <p>© 2024 Sergio Bruno. All rights reserved.</p> 
             </section>
+            <div class="col-sm-8">
+                <h3>-Hay esperanza en el error honesto; Ninguna en las gélidas perfecciones del mero estilista- Charles Rennie Mackintosh</h3>
+                <div class="row pt-3">
+                    <ul class="col">
+                        <li class="list-unstyled"><a class="tBlanco" href="#">Inicio</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/Sobremi.html">Sobre mi</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/DesignUI.html">Design/UI</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/ResearchUX.html">Research/UX</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/Contacto.html">Contacto</a></li>
+                    </ul>
+                    <ul class="col">
+                        <li class="list-unstyled"><a class="tBlanco" href="">Coffee Cat</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">Cat Anti-Virus</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">TalkApp</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">ThinkChess</a></li>
+                    </ul>  
+                    <ul class="col">
+                        <li class="list-unstyled"><a class="tBlanco" href="">Términos y Condiciones</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">Políticas de Privacidad</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">Políticas de las Cookies</a></li>
+                    </ul>  
+                </div>
+            </div>
         </section>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

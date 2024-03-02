@@ -5,68 +5,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4a212ad058.js" crossorigin="anonymous"></script>
     <title>Sergio Bruno - Sobre mi</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../SergioBruno.ico" type="image/x-icon">
 </head>
-</nav>
-<body>
-    <header class="header">
-        <nav>
-            <ul>
-                <li class="listas"><img src="../assets/img/Logo.png" alt="Logotipo que dice Sergio Bruno"></li>
-                <li class="listas"><a class="enlacePaginas" href="../index.html">INICIO</a></li>
-                <li class="listas"><a class="enlacePaginas" href="#">SOBRE MI</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./DesignUI.html">DESIGN/UI</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./ResearchUX.html">RESEARCH/UX</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./Contacto.html">CONTACTO</a></li>
-            </ul>        
+<body class="cPrimario tBlanco">
+    <header class="cSecundario">
+        <div class="container">
+            <nav class="navbar sticky-top">
+                <div class="container-fluid">
+                    <picture class="px-5">
+                        <img class="navbar-brand" src="../assets/img/Logo.png" alt="Logotipo que dice Sergio Bruno">
+                    </picture>
+                    <ul class="nav py-3">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">SOBRE MI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./designUI.html">DESIGN/UI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./researchUX.html">RESEARCH/UX</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./Contacto.html">CONTACTO</a></li>
+                    </ul>        
+                </div>
+            </nav>
+        </div>
     </header>
-    <main class="main">
-        <figure>
+    <main>
+        <div>
             <img class="fotoPortada" src="../assets/img/FondoSobreMi.png" alt="Fondo de Sergio Bruno (autor de la página)">
-        </figure>
-        <div class="colorPrimario info">
-        <h1 class="">Sobre Mi</h1>
-        <section>
-            <h2>¿Quien soy?</h2>
-            <p>Me llamo Sergio, Bruno Urbano. Nativo digital, Argentino y con mucha pación por el diseño y la investigación</p>
-        </section>
-        <section>
-            <h2>¿Qué puedo ofrecer YO a una empresa</h2>
-            <p>Me baso en experimentar, aprender cosas mediante la practica y la investigación, resuelvo mis problemas a base de curiosidad y trabajo en equipo.</p>    
-        </section>
-        <section>
-            <h2>Habilidades</h2>
-            <p>Manejo en Photoshop, Illustration, Figma, me desemvuelvo bien en el trabajo en equipo y muy buen Oyente activo</p>
-        </section>
-        <section>
-            <h2>Objetivos</h2>
-            <p>Generar todo tipo de experiencias, generar valor sobre donde piso, y aprender por encima de todo</p>
-        </section>
+        </div>
+        <div class="cSecundario p-5">
+        <h1 class="d-flex justify-content-center mb-4">¿Quien es Sergio Bruno?</h1>
+            <div class="container">
+                <div class="row">
+                <section class="col">
+                    <h2>¿Quien soy?</h2>
+                    <p>Me llamo Sergio, Bruno Urbano. Soy nativo digital, argentino y con mucha pasión por el diseño y la investigación, me encanta experimentar, aprender cosas nuevas mediante la practica y la busqueda, resuelvo mis problemas a base de curiosidad y trabajo en duro. Manejo Photoshop, Illustration, Figma, me desenvuelvo bien en el trabajo en equipo, además buen Oyente activo. Mis objetivos son generar todo tipo de experiencias nuevas, generar valor sobre donde piso, y aprender por encima de todo</p>
+                    <a class="btn cTerciario btnc" href="./contacto.html" role="button">Contactame</a>
+                </section>
+                <section class="col">
+                    <h2>Servicios que Ofrezco:</h2>
+                    <h3 class="my-3 tTerciario">Diseño Grafico</h3>
+                    <h3 class="my-3 tTerciario">Web UI/UX Design</h3>
+                    <h3 class="my-3 tTerciario">Mobile App UI/UX Design</h3>
+                </section>
+                </div>
+            </div>
         </div>
 
 
     </main>
-    <footer class="colorSecundario">
-        <section>
-            <h2>Mantente en Contacto</h2>
-            <h3>Sergio Bruno</h3>
-            <p>© 2024 Sergio Bruno. All rights reserved.</p>
-            <section>
-                <h3>Descubre más</h3>
-                <ul>
-                    <li><a href="#">Sobre mi</a></li>
-                    <li><a href="./DesignUI.html">Design/UI</a></li>
-                    <li><a href="./ResearchUX.html">Research/UX</a></li>
-                    <li><a href="./Contacto.html">Contacto</a></li>
-                </ul>
-                <ul>
-                    <li><a href="">Términos y Condiciones</a></li>
-                    <li><a href="">Políticas de Privacidad</a></li>
-                    <li><a href="">Políticas de las Cookies</a></li>
-                </ul>
+    <footer class="container py-5">
+        <section class="row">
+            <section class="col-sm-4">
+                <h4>Sergio Bruno</h4>
+                <p>© 2024 Sergio Bruno. All rights reserved.</p> 
             </section>
+            <div class="col-sm-8">
+                <h3>-Hay esperanza en el error honesto; Ninguna en las gélidas perfecciones del mero estilista- Charles Rennie Mackintosh</h3>
+                <div class="row pt-3">
+                    <ul class="col">
+                        <li class="list-unstyled"><a class="tBlanco" href="#">Inicio</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/Sobremi.html">Sobre mi</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/DesignUI.html">Design/UI</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/ResearchUX.html">Research/UX</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/Contacto.html">Contacto</a></li>
+                    </ul>
+                    <ul class="col">
+                        <li class="list-unstyled"><a class="tBlanco" href="">Coffee Cat</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">Cat Anti-Virus</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">TalkApp</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">ThinkChess</a></li>
+                    </ul>  
+                    <ul class="col">
+                        <li class="list-unstyled"><a class="tBlanco" href="">Términos y Condiciones</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">Políticas de Privacidad</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">Políticas de las Cookies</a></li>
+                    </ul>  
+                </div>
+            </div>
         </section>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

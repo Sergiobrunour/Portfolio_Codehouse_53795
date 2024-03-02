@@ -5,89 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4a212ad058.js" crossorigin="anonymous"></script>
     <title>Sergio Bruno - Research/UX</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../SergioBruno.ico" type="image/x-icon">
 </head>
-</nav>
-<body>
-    <header class="header">
-        <nav>
-            <ul>
-                <li class="listas"><img src="../assets/img/Logo.png" alt="Logotipo que dice Sergio Bruno"></li>
-                <li class="listas"><a class="enlacePaginas" href="../index.html">INICIO</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./Sobremi.html">Sobre MI</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./DesignUI.html">DESIGN/UI</a></li>
-                <li class="listas"><a class="enlacePaginas" href="#">RESEARCH/UX</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./Contacto.html">CONTACTO</a></li>
-            </ul>        
+<body class="cPrimario tBlanco">
+    <header class="cSecundario">
+        <div class="container">
+            <nav class="navbar sticky-top">
+                <div class="container-fluid">
+                    <picture class="px-5">
+                        <img class="navbar-brand" src="../assets/img/Logo.png" alt="Logotipo que dice Sergio Bruno">
+                    </picture>
+                    <ul class="nav py-3">
+                        <li class="nav-item"><a class="nav-link" aria-current="page" href="../index.html">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./sobremi.html">SOBRE MI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./designUI.html">DESIGN/UI</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="#">RESEARCH/UX</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./Contacto.html">CONTACTO</a></li>
+                    </ul>        
+                </div>
+            </nav>
+        </div>
     </header>
-    <main class="main">
-        <figure>
-            <!--Placeholder hasta poder editar una foto más adecuada-->
+    <main class="">
+        <div>
             <img class="fotoPortada" src="../assets/img/FondoResearchUX.png" alt="Fondo de figura abstracta de varios colores con forma de ojo y varias figuras geométricas"> 
-        </figure>
-        <div class="colorPrimario">
-            <!--Acordeón para mostrar proyecto por proyecto, iría descripción del proyecto e imagen al costado
-            con un botón por debajo del texto para redirigir a la Página/Proyecto-->
-            <h1>Research/UX Proyectos</h1>
-            <div class="divAccordion">
-                <div class="colorTerciario">
-                    <h2>Proyecto 1: Research sobre consumidores del Café</h2>
-                    <i class="fa-solid fa-chevron-down"></i>
-                    <a href="">Ver más</a>
+        </div>
+        <div class="accordion p-5 cSecundario" id="accordionPanelsStayOpen">
+            <h1 class="d-flex align-items-center justify-content-center mb-4">Proyectos research/UX</h1>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Proyecto 1: Research sobre consumidores del Café
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                        <div class="accordion-body">
+                            <h3>Coffee Cat</h3>
+                        <p>Re-diseño de la pagina web de una Cafetería, enseñando a los usuarios que es lo que realmente quieren, con menús interactivos, sección de compra de café de especialidad, cursos informativos y clases para ser varista, no solo somos un Cafetería, somos una marca de Café</p>
+                        <a class="btn cTerciario" href="#" role="button">Ver más</a>
+                    </div>
                 </div>
-                <div class="colorPrimario bloqueTexto">
-                    <h3>Coffee Cat</h3>
-                    <p>Re-diseño de la pagina web de una Cafetería, enseñando a los usuarios que es lo que realmente quieren, con menús interactivos, sección de compra de café de especialidad, cursos informativos y clases para ser varista, no solo somos un Cafetería, somos una marca de Café</p>
-                    <a href="">Ver más</a>
-                </div>
-            </div>
-            <div class="divAccordion">
-                <div class="colorTerciario">
-                <h2>Proyecto 2: Intefaz de Anti-Virus y entrevistas de usuarios</h2>
-                <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="colorPrimario bloqueTexto">
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                    Proyecto 2: Intefaz de Anti-Virus y entrevistas de usuarios
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse">
+                <div class="accordion-body">
                     <h3>Cat Anti-Virus</h3>
                     <p>Diseño desde cero, para un nuevo Anti-Virus, siguiendo a la competencia, y basado en los usuarios, generamos una UI perfecta para que los usuarios encuentren todos los parametros que desean con la menor cantidad de clicks posibles</p>
+                    <a class="btn cTerciario" href="#" role="button">Ver más</a>
+                    </div>
                 </div>
-            </div>
-            <div class="divAccordion">
-                <div class="colorTerciario">
-                <h2>Proyecto 3: Informe sobre usuarios de los ChatApps</h2>
-                <i class="fa-solid fa-chevron-down"></i>    
                 </div>
-            </div>
-            <div class="divAccordion">
-                <div class="colorTerciario">
-                <h2>Proyecto 4: Entrevistas desde Amateurs hasta Professionales de Ajedrez</h2>
-                <i class="fa-solid fa-chevron-down"></i>    
+                <div class="accordion-item">
+                <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                    Proyecto 3: Informe sobre usuarios de los ChatApps
+                </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse">
+                <div class="accordion-body">
+                    <h3>Cat Anti-Virus</h2>
+                        <p>Diseño desde cero, para un nuevo Anti-Virus, siguiendo a la competencia, y basado en los usuarios, generamos una UI perfecta para que los usuarios encuentren todos los parametros que desean con la menor cantidad de clicks posibles</p>
+                        <a class="btn cTerciario" href="#" role="button">Ver más</a>
+                    </div>
                 </div>
-                
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                        Proyecto 4: Entrevistas desde Amateurs hasta Professionales de Ajedrez
+                    </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse">
+                    <div class="accordion-body">
+                        <h3>Cat Anti-Virus</h2>
+                            <p>Diseño desde cero, para un nuevo Anti-Virus, siguiendo a la competencia, y basado en los usuarios, generamos una UI perfecta para que los usuarios encuentren todos los parametros que desean con la menor cantidad de clicks posibles</p>
+                            <a class="btn cTerciario" href="#" role="button">Ver más</a>
+                    </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <iframe loading="lazy" width="720" height="460" src="https://www.youtube.com/embed/qMtC8SaKjNs" title="6 métodos de investigación de UX Research 🔎" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="cSecundario">
+            <h2 class="d-flex justify-content-center mt-4">Metodos de investigación</h2>
+                <div class="d-flex justify-content-center">
+                    <iframe class="p-2 cPrimario m-2" loading="lazy" width="720" height="460" src="https://www.youtube.com/embed/qMtC8SaKjNs" title="6 métodos de investigación de UX Research 🔎" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+            </div>
     </main>
-    <footer class="colorSecundario">
-        <section>
-            <h2>Mantente en Contacto</h2>
-            <h3>Sergio Bruno</h3>
-            <p>© 2024 Sergio Bruno. All rights reserved.</p>
-            <section>
-                <h3>Descubre más</h3>
-                <ul>
-                    <li><a href="./Sobremi.html">Sobre mi</a></li>
-                    <li><a href="./DesignUI.html">Design/UI</a></li>
-                    <li><a href="#">Research/UX</a></li>
-                    <li><a href="./Contacto.html">Contacto</a></li>
-                </ul>
-                <ul>
-                    <li><a href="">Términos y Condiciones</a></li>
-                    <li><a href="">Políticas de Privacidad</a></li>
-                    <li><a href="">Políticas de las Cookies</a></li>
-                </ul>
+    <footer class="container py-5">
+        <section class="row">
+            <section class="col-sm-4">
+                <h4>Sergio Bruno</h4>
+                <p>© 2024 Sergio Bruno. All rights reserved.</p> 
             </section>
+            <div class="col-sm-8">
+                <h3>-Hay esperanza en el error honesto; Ninguna en las gélidas perfecciones del mero estilista- Charles Rennie Mackintosh</h3>
+                <div class="row pt-3">
+                    <ul class="col">
+                        <li class="list-unstyled"><a class="tBlanco" href="#">Inicio</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/Sobremi.html">Sobre mi</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/DesignUI.html">Design/UI</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/ResearchUX.html">Research/UX</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/Contacto.html">Contacto</a></li>
+                    </ul>
+                    <ul class="col">
+                        <li class="list-unstyled"><a class="tBlanco" href="">Coffee Cat</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">Cat Anti-Virus</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">TalkApp</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">ThinkChess</a></li>
+                    </ul>  
+                    <ul class="col">
+                        <li class="list-unstyled"><a class="tBlanco" href="">Términos y Condiciones</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">Políticas de Privacidad</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">Políticas de las Cookies</a></li>
+                    </ul>  
+                </div>
+            </div>
         </section>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

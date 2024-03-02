@@ -6,77 +6,99 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/4a212ad058.js" crossorigin="anonymous"></script>
     <title>Sergio Bruno - Portfolio</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="SergioBruno.ico" type="image/x-icon">
 </head>
-</nav>
-<body>
-    <header class="header">
-        <nav>
-            <ul>
-                <li class="listas"><img src="./assets/img/Logo.png" alt="Logotipo que dice Sergio Bruno"></li>
-                <li class="listas"><a class="enlacePaginas" href="#">INICIO</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./pages/Sobremi.html">SOBRE MI</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./pages/DesignUI.html">DESIGN/UI</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./pages/ResearchUX.html">RESEARCH/UX</a></li>
-                <li class="listas"><a class="enlacePaginas" href="./pages/Contacto.html">CONTACTO</a></li>
-            </ul>        
-    </header>
-    <main class="main">
-        <figure>
-            <img class="fotoPortada" src="./assets/img/InicioSergio.png" alt="Fondo de Sergio Bruno (autor de la página)">
-        </figure>
-        <div class="info colorPrimario">
-            <!--Proyectos ficticios
-            Acá me gustaria poner el texto sobre la imagen, y generar un bloque entero para 
-            dividir las secciones Proyectos del inicio y el resto del contenido-->
-            <h1>PROYECTOS</h1>
-            <p>Primero el Equipo, luego la eficiencia y por ultimo la imagen.</p>
-            <section>
-                <title></title>
-                <img class="imgproyectos" src="./assets/img/Proyecto_Img1.jpg" alt="Coffee Cat, Logo de una Cafetería con forma de Gato">
-                <h2>Coffee Cat</h2>
-                <p></p>
-            </section>
-            <section>
-                <img class="imgproyectos" src="./assets/img/Proyecto_Img2.jpg" alt="Cat Anti-virus, Logo en blanco y negro con forma de gato y dientes afilados">
-                <h2>Cat Anti-virus</h2>
-                <p></p>
-            </section>
-            <section>
-                <img class="imgproyectos" src="./assets/img/Proyecto_Img3.jpg" alt="TalkApp, Logo de la palabra Talk con la L y la K con comillas debajo">
-                <h2>TalkApp</h2>
-                <p></p>
-            </section>
-            <section>
-                <img class="imgproyectos" src="./assets/img/Proyecto_Img4.jpg" alt="ThinkChess, Logo de la palabra Think con una torre y un caballo entre la H y la N">
-                <h2>ThinkChess</h2>
-                <p></p>
-            </section>
+<body class="cPrimario tBlanco">
+    <header class="cSecundario">
+        <div class="container">
+            <nav class="navbar sticky-top">
+                <div class="container-fluid">
+                    <picture class="px-5">
+                        <img class="navbar-brand" src="./assets/img/Logo.png" alt="Logotipo que dice Sergio Bruno">
+                    </picture>
+                    <ul class="nav py-3">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">INICIO</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/Sobremi.html">SOBRE MI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/DesignUI.html">DESIGN/UI</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/ResearchUX.html">RESEARCH/UX</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/Contacto.html">CONTACTO</a></li>
+                    </ul>        
+                </div>
+            </nav>
         </div>
+    </header>
+    <main class="cSecundario">
+        <div>
+            <img class="fotoPortada" src="./assets/img/InicioSergio.png" alt="Fondo de Sergio Bruno (autor de la página)">
+        </div>
+        <section class="container p-5 text-center">
+            <h1>PROYECTOS</h1>
+            <p>Todos los proyectos presentados y dirigidos por mi a lo largo de los años.</p>
+            <div class="row row-cols-4">
+                <div class="col-12 col-md-6 my-2">
+                    <section class="row justify-content-center">
+                        <h2 class="mt-2">Coffee Cat</h2>
+                        <img class="imgProyecto" src="./assets/img/Proyecto_Img1.jpg" alt="Coffee Cat, Logo de una Cafetería con forma de Gato">
+                        <p>"Cafetería llena de gatos para los amantes de los felinos"</p>
+                    </section>
+                </div>
+                <div class="col-12 col-md-6 my-2">
+                    <section class="row justify-content-center">
+                        <h2 class="mt-2">Cat Anti-virus</h2>
+                        <img class="imgProyecto" src="./assets/img/Proyecto_Img2.jpg" alt="Cat Anti-virus, Logo en blanco y negro con forma de gato y dientes afilados">
+                        <p>"Anti-Virus captura virus dentro de tu ordenador"</p>
+                </section>
+                </div>
+                <div class="col-12 col-md-6 my-2">
+                    <section class="row justify-content-center">
+                        <h2 class="mt-2">TalkApp</h2>
+                        <img class="imgProyecto" src="./assets/img/Proyecto_Img3.jpg" alt="TalkApp, Logo de la palabra Talk con la L y la K con comillas debajo">
+                        <p>"App para conocer gente de todo el mundo"</p>
+                </section class="row"></div>
+                <div class="col-12 col-md-6 my-2">
+                    <section class="row justify-content-center">
+                        <h2 class="mt-2">ThinkChess</h2>
+                        <img class="imgProyecto" src="./assets/img/Proyecto_Img4.jpg" alt="ThinkChess, Logo de la palabra Think con una torre y un caballo entre la H y la N">
+                        <p>"Website de Ajedrez para todos los niveles de jugadores"</p>
+                </section></div>
+            </div>
+        </section>
         
 
     </main>
-    <footer class="colorSecundario">
-        <section>
-            <h2>Mantente en Contacto</h2>
-            <h3>Sergio Bruno</h3>
-            <p>© 2024 Sergio Bruno. All rights reserved.</p>
-            <section>
-                <h3>Descubre más</h3>
-                <ul>
-                    <li><a href="./pages/Sobremi.html">Sobre mi</a></li>
-                    <li><a href="./pages/DesignUI.html">Design/UI</a></li>
-                    <li><a href="./pages/ResearchUX.html">Research/UX</a></li>
-                    <li><a href="./pages/Contacto.html">Contacto</a></li>
-                </ul>
-                <ul>
-                    <li><a href="">Términos y Condiciones</a></li>
-                    <li><a href="">Políticas de Privacidad</a></li>
-                    <li><a href="">Políticas de las Cookies</a></li>
-                </ul>
+    <footer class="container py-5">
+        <section class="row">
+            <section class="col-sm-4">
+                <h4>Sergio Bruno</h4>
+                <p>© 2024 Sergio Bruno. All rights reserved.</p> 
             </section>
+            <div class="col-sm-8">
+                <h3>-Hay esperanza en el error honesto; Ninguna en las gélidas perfecciones del mero estilista- Charles Rennie Mackintosh</h3>
+                <div class="row pt-3">
+                    <ul class="col">
+                        <li class="list-unstyled"><a class="tBlanco" href="#">Inicio</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/Sobremi.html">Sobre mi</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/DesignUI.html">Design/UI</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/ResearchUX.html">Research/UX</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="./pages/Contacto.html">Contacto</a></li>
+                    </ul>
+                    <ul class="col">
+                        <li class="list-unstyled"><a class="tBlanco" href="">Coffee Cat</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">Cat Anti-Virus</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">TalkApp</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">ThinkChess</a></li>
+                    </ul>  
+                    <ul class="col">
+                        <li class="list-unstyled"><a class="tBlanco" href="">Términos y Condiciones</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">Políticas de Privacidad</a></li>
+                        <li class="list-unstyled"><a class="tBlanco" href="">Políticas de las Cookies</a></li>
+                    </ul>  
+                </div>
+            </div>
         </section>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
