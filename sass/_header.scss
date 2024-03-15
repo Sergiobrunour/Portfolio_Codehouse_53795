@@ -1,0 +1,33 @@
+.nav-link {
+    font-size: 0,875rem;
+    font-weight: 600;
+    color: $terciario;
+}
+.nav-link{
+    &:hover{
+    color: $blanco;
+    }
+    &:focus {
+    color: $blanco;
+    }
+}
+.nav-link{
+    &:focus-visible {
+        outline: 0;
+        box-shadow: 0 0 0 0.25rem $terciario-contraste;
+    }
+}
+.nav-link.disabled{
+    &:disabled {
+        color: var(--bs-nav-link-disabled-color);
+        pointer-events: none;
+        cursor: default;
+    }
+}
+.nav-link.active{
+    color: $blanco;
+}
+.nav-size {
+    font-size: 14;
+    font-weight: 600;
+}

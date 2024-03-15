@@ -1,0 +1,12 @@
+
+.animationImg{
+    object-fit: cover;
+    transition: transform 0.6s ease-in-out;
+    filter: grayscale(100%);
+    transform: scale(0.9);
+    &:hover{
+        transform: initial;
+        filter: initial;
+    }
+}
+
