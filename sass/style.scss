@@ -1,8 +1,9 @@
 @import "variables";
 @import "reset";
 @import "header";
-@import 'animate.css';
 @import "animation";
+@import "mixin";
+@import 'animate.css';
 
 .cPrimario{
     background-color: $primario;
@@ -27,18 +28,13 @@
 }
 
 h1{
-    font-size: 2rem;
-    font-weight: 900;
-    display: inline;
+    @include texto(2rem, 900)
 }
 h2{
-    font-size: 1.5rem;
-    font-weight: 600;
-    display: inline;
+    @include texto(1.5rem, 600)
 }
 h3{
-    font-size: 1.2rem;
-    font-weight: 500;
+    @include texto(1.2rem, 500)
 }
 // Dejo esta linea de codigos para personalizar los colores de los elementos de boostrap, No pude entender como cambiarlo y me quedé sin tiempo por problemas para compilar sass
 .accordion{
