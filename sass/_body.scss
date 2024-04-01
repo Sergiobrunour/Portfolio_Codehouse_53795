@@ -1,0 +1,34 @@
+.accordionColor{
+    background-color: $primary;
+    color: $blanco;
+    transition: $terciary, border-radius .15s ease;;
+    border-color: $secondary;
+
+    .accordionButtonColor{
+        color: $secondary;
+        background-color: $terciary;
+        font-size: 1.5rem;
+        font-weight: 600;
+        &:hover{
+            color: $primary;
+        }
+        &:focus{
+            box-shadow: 0 0 0 0.25rem $box-shadow;
+        }
+    }
+}
+
+.fotoPortada{
+    object-fit: contain;
+    width: 100%;
+}
+
+.bb{
+    font-weight: 500;
+}
+
+.imgProyecto{
+    object-fit: cover;
+    width: 30rem;
+    height: 20rem;
+}

@@ -1,7 +1,7 @@
 .nav-link {
     font-size: 0,875rem;
     font-weight: 600;
-    color: $terciario;
+    color: $terciary;
 }
 .nav-link{
     &:hover{
@@ -14,7 +14,7 @@
 .nav-link{
     &:focus-visible {
         outline: 0;
-        box-shadow: 0 0 0 0.25rem $terciario-contraste;
+        box-shadow: 0 0 0 0.25rem $contraste;
     }
 }
 .nav-link.disabled{
